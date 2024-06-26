@@ -63,7 +63,7 @@ from iopaint.schema import (
     RealESRGANModel,
 )
 
-CURRENT_DIR = Path(__file__).parent.absolute().resolve()
+CURRENT_DIR = Path(__file__).parent.absolute().resolve()    
 WEB_APP_DIR = CURRENT_DIR / "web_app"
 
 

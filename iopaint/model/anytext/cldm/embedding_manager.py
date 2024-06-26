@@ -7,7 +7,6 @@ import torch.nn.functional as F
 from functools import partial
 from iopaint.model.anytext.ldm.modules.diffusionmodules.util import conv_nd, linear
 
-
 def get_clip_token_for_string(tokenizer, string):
     batch_encoding = tokenizer(string, truncation=True, max_length=77, return_length=True,
                                return_overflowing_tokens=False, padding="max_length", return_tensors="pt")
