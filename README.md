@@ -1,13 +1,13 @@
-Report for Assignment 1
-IOPaint
+#Report for Assignment 1
+##IOPaint
 
-Name: Group 20
+Name: <Group 20>
 
-URL: https://github.com/Sanster/IOPaint 
+URL: <https://github.com/Sanster/IOPaint>
 
-Number of lines of code and the tool used to count it: 32,775 using Lizard
+Number of lines of code and the tool used to count it: <32,775 using Lizard>
 
-Programming language: Python
+Programming language: <Python>
 
 Coverage measurement
 Existing tool
