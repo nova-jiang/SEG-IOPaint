@@ -84,10 +84,6 @@ https://github.com/nova-jiang/SEG-IOPaint/commit/0a6fff64083b51c965c44326fc9451e
 
 Coverage results output by instrumentation:
 
-![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture10.png)
-
-![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture11.png)
-
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture12.png)
 
 
@@ -95,10 +91,6 @@ Function 2: resize_image() from iopaint.model.anytext.utils.py
 https://github.com/nova-jiang/SEG-IOPaint/commit/0a6fff64083b51c965c44326fc9451e78c2fd5e8
 
 Coverage results output by instrumentation:
-
-![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture13.png)
-
-![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture14.png)
 
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture15.png)
 
@@ -190,10 +182,6 @@ Screenshot of new coverage results:
 <Test 1> save_images()
 https://github.com/nova-jiang/SEG-IOPaint/commit/0a6fff64083b51c965c44326fc9451e78c2fd5e8
 
-![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture25.png)
-
-![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture26.png)
-
 Screenshot of old coverage results: 
 
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture27.png)
@@ -209,9 +197,6 @@ The coverage increased from 0% to 100% for this function. Initially, none of the
 
 <Test 2> resize_image
 https://github.com/nova-jiang/SEG-IOPaint/commit/0a6fff64083b51c965c44326fc9451e78c2fd5e8
-The coverage increased from 0% to 100% for this function, which shows that the function went from not being tested to fully tested. I developed tests for calling this function with valid inputs, inputs not requiring resizing, invalid input types, and empty inputs. In this case, special attention were paid to edge cases, such as empty inputs and invalid data types, which helped cover branches that might be easily overlooked in typical usage scenarios. Each of these branches was hit and tested after improvement, so it efficiently improved the coverage.
-
-![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture29.png)
 
 Screenshot of old coverage results: 
 
@@ -220,6 +205,8 @@ Screenshot of old coverage results:
 Screenshot of new coverage results: 
 
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture31.png)
+
+The coverage increased from 0% to 100% for this function, which shows that the function went from not being tested to fully tested. I developed tests for calling this function with valid inputs, inputs not requiring resizing, invalid input types, and empty inputs. In this case, special attention were paid to edge cases, such as empty inputs and invalid data types, which helped cover branches that might be easily overlooked in typical usage scenarios. Each of these branches was hit and tested after improvement, so it efficiently improved the coverage.
 
 ### Overall
 
