@@ -4,15 +4,41 @@ import cv2
 import numpy as np
 from PIL import Image, ImageDraw
 
+branch_coverage = {
+    31: False,  # save_images: if not os.path.exists(folder)
+    32: False,  # save_images: if not os.path.exists(folder_path)
+    33: False,  # save_images: if not img_list
+    
+    34: False,  # resize_image: if not isinstance(img, np.ndarray)
+    35: False,  # resize_image: if img.size == 0
+    36: False,  # resize_image: if max_dimension > max_length
+}
+
+# Chosen functions: save_images, resize_image
+
 
 def save_images(img_list, folder):
+    print(f"save_images called with folder: {folder}")
+    if not img_list:
+        branch_coverage[33] = True
+        print("Branch 33 hit")
+        print("Warning: Empty image list provided")
+        return
+
     if not os.path.exists(folder):
+        branch_coverage[31] = True
+        print("Branch 31 hit")
         os.makedirs(folder)
+
     now = datetime.datetime.now()
     date_str = now.strftime("%Y-%m-%d")
     folder_path = os.path.join(folder, date_str)
+    
     if not os.path.exists(folder_path):
+        branch_coverage[32] = True
+        print("Branch 32 hit")
         os.makedirs(folder_path)
+    
     time_str = now.strftime("%H_%M_%S")
     for idx, img in enumerate(img_list):
         image_number = idx + 1
@@ -29,12 +55,23 @@ def check_channels(image):
         image = image[:, :, :3]
     return image
 
-
 def resize_image(img, max_length=768):
+    if not isinstance(img, np.ndarray):
+        branch_coverage[34] = True
+        print("Branch 34 hit")
+        raise ValueError("Input must be a numpy array")
+
+    if img.size == 0:
+        branch_coverage[35] = True
+        print("Branch 35 hit")
+        raise ValueError("Input image is empty")
+    
     height, width = img.shape[:2]
     max_dimension = max(height, width)
-
+    
     if max_dimension > max_length:
+        branch_coverage[36] = True
+        print("Branch 36 hit")
         scale_factor = max_length / max_dimension
         new_width = int(round(width * scale_factor))
         new_height = int(round(height * scale_factor))
@@ -42,6 +79,7 @@ def resize_image(img, max_length=768):
         img = cv2.resize(img, new_size)
     height, width = img.shape[:2]
     img = cv2.resize(img, (width - (width % 64), height - (height % 64)))
+
     return img
 
 
