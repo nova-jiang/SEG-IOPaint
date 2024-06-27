@@ -26,7 +26,7 @@ util.py
 
 ### Your own coverage tool
 <The following is supposed to be repeated for each group member>
-<Group member name> Isabella
+<Group member name> Isabella Reyes
 
 <Function 1 name>
 Function 1: forward() from TimestepEmbedSequential class in openaimodel.py 
