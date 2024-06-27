@@ -18,13 +18,17 @@ coverage run --source=iopaint -m unittest discover -s iopaint/tests
 Coverage results from coverage.py using unittest before our instrumentation and testing:
 
 openaimodel.py:
+
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture1.png)
 
 common.py:
+
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture2.png)
 
 util.py:
+
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture3.png)
+
 <Show the coverage results provided by the existing tool with a screenshot>
 
 ### Your own coverage tool
