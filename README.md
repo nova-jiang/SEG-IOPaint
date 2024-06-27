@@ -19,9 +19,12 @@ Coverage results from coverage.py using unittest before our instrumentation and 
 
 openaimodel.py:
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture1.png)
-common.py
 
-util.py
+common.py:
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture2.png)
+
+util.py:
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture3.png)
 <Show the coverage results provided by the existing tool with a screenshot>
 
 ### Your own coverage tool
@@ -33,9 +36,13 @@ Function 1: forward() from TimestepEmbedSequential class in openaimodel.py
 https://github.com/Sanster/IOPaint/compare/main...nova-jiang:SEG-IOPaint:main#diff-d8e87eab477587cf443be3dbdc456613121ee5ec2b65492de89475e34c519af3 
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
+Coverage results output by instrumentation: 
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture4.png)
 
 <Provide a screenshot of the coverage results output by the instrumentation>
-
+Coverage results output by instrumentation: 
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture5.png)
+ 
 <Function 2 name>
 Function 2: forward() from Upsample class in openaimodel.py 
 https://github.com/Sanster/IOPaint/compare/main...nova-jiang:SEG-IOPaint:main#diff-d8e87eab477587cf443be3dbdc456613121ee5ec2b65492de89475e34c519af3 
@@ -51,6 +58,8 @@ https://github.com/nova-jiang/SEG-IOPaint/commit/3825110289a2c1597edf375d8d17506
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 
+Coverage results output by instrumentation:
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture6.png)
 
 <Provide a screenshot of the coverage results output by the instrumentation>
 
@@ -58,6 +67,10 @@ https://github.com/nova-jiang/SEG-IOPaint/commit/3825110289a2c1597edf375d8d17506
 Function 2: initiation function from the Activation class in common.py
 https://github.com/nova-jiang/SEG-IOPaint/commit/3825110289a2c1597edf375d8d17506ddfe84cf3
 
+Coverage results output by instrumentation:
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture7.png)
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture8.png)
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture9.png)
 <Provide the same kind of information provided for Function 1>
 
 <Group member name> Nova Jiang
@@ -67,12 +80,16 @@ https://github.com/nova-jiang/SEG-IOPaint/commit/0a6fff64083b51c965c44326fc9451e
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 
+Coverage results output by instrumentation:
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture10.png)
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture11.png)
 <Provide a screenshot of the coverage results output by the instrumentation>
 
 <Function 2 name>
 resize_image() from iopaint.model.anytext.utils.py
 https://github.com/nova-jiang/SEG-IOPaint/commit/0a6fff64083b51c965c44326fc9451e78c2fd5e8
-
+Coverage results output by instrumentation:
+![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture12.png)
 <Provide the same kind of information provided for Function 1>
 
 ## Coverage improvement
