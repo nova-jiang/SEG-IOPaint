@@ -37,10 +37,12 @@ https://github.com/Sanster/IOPaint/compare/main...nova-jiang:SEG-IOPaint:main#di
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 Coverage results output by instrumentation: 
+
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture4.png)
 
 <Provide a screenshot of the coverage results output by the instrumentation>
 Coverage results output by instrumentation: 
+ 
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture5.png)
  
 <Function 2 name>
@@ -59,6 +61,7 @@ https://github.com/nova-jiang/SEG-IOPaint/commit/3825110289a2c1597edf375d8d17506
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 
 Coverage results output by instrumentation:
+
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture6.png)
 
 <Provide a screenshot of the coverage results output by the instrumentation>
@@ -68,9 +71,11 @@ Function 2: initiation function from the Activation class in common.py
 https://github.com/nova-jiang/SEG-IOPaint/commit/3825110289a2c1597edf375d8d17506ddfe84cf3
 
 Coverage results output by instrumentation:
+
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture7.png)
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture8.png)
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture9.png)
+
 <Provide the same kind of information provided for Function 1>
 
 <Group member name> Nova Jiang
@@ -88,8 +93,11 @@ Coverage results output by instrumentation:
 <Function 2 name>
 resize_image() from iopaint.model.anytext.utils.py
 https://github.com/nova-jiang/SEG-IOPaint/commit/0a6fff64083b51c965c44326fc9451e78c2fd5e8
+
 Coverage results output by instrumentation:
+
 ![Image text](https://github.com/nova-jiang/SEG-IOPaint/blob/main/assets/Picture12.png)
+
 <Provide the same kind of information provided for Function 1>
 
 ## Coverage improvement
