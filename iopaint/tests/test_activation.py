@@ -49,7 +49,7 @@ class TestActivation(unittest.TestCase):
         activation = Activation('swish')
         y = activation(x)
         self.assertTrue(torch.equal(y, x * torch.sigmoid(x)))
-    
+
     def test_activation_invalid_type(self):
         with self.assertRaises(NotImplementedError):
             Activation('none')
