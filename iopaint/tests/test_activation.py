@@ -24,13 +24,13 @@ class TestActivation(unittest.TestCase):
         x = torch.tensor([-1.0, 0.0, 1.0])
         activation = Activation('hard_sigmoid')
         y = activation(x)
-        self.assertTrue(torch.equal(y, torch.nn.Hardsigmoid(x)))
+        self.assertTrue(torch.equal(y, torch.nn.functional.relu6(1.2 * x + 3) / 6))
 
     def test_activation_hardswish(self):
         x = torch.tensor([-1.0, 0.0, 1.0])
         activation = Activation('hard_swish')
         y = activation(x)
-        self.assertTrue(torch.equal(y, torch.nn.Hardswish(x)))
+        self.assertTrue(torch.equal(y, torch.nn.functional.relu6(x + 3) / 6))
 
     def test_activation_leakyrelu(self):
         x = torch.tensor([-1.0, 0.0, 1.0])
