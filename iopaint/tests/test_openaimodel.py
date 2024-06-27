@@ -14,7 +14,7 @@ class MockTimestepBlock(TimestepBlock):
     def forward(self, x, emb):
         return x + emb
 
-# simplifies attributes in SpatialTransformer
+# simplifies attributes of SpatialTransformer
 class MockSpatialTransformer(SpatialTransformer):
     def __init__(self, *args, **kwargs):
         # initialize nn.Module to bypass SpatialTransformer's __init__
